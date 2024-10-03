@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicago Skyline" translatesAutoresizingMaskIntoConstraints="NO" id="SJT-UG-mKm" userLabel="Profile Background">
+                                <rect key="frame" x="0.0" y="78.999999999999986" width="393" height="209.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SJT-UG-mKm" secondAttribute="height" multiplier="15:8" id="8RE-yf-ebD"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gwen Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="zVG-zg-niU" userLabel="Profile Picture" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                <rect key="frame" x="116" y="99" width="161" height="161"/>
+                                <rect key="frame" x="81.666666666666686" y="139" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zVG-zg-niU" secondAttribute="height" multiplier="1:1" id="8zT-1I-Y6m"/>
                                 </constraints>
@@ -26,9 +32,12 @@
                         <viewLayoutGuide key="safeArea" id="pLb-Wu-4db"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstItem="zVG-zg-niU" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="40" id="EpI-yh-8r2"/>
+                            <constraint firstItem="zVG-zg-niU" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="80" id="EpI-yh-8r2"/>
                             <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="Gi3-4z-aWV"/>
-                            <constraint firstItem="pLb-Wu-4db" firstAttribute="bottom" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="509" id="lcu-qO-6zH"/>
+                            <constraint firstItem="pLb-Wu-4db" firstAttribute="trailing" secondItem="SJT-UG-mKm" secondAttribute="trailing" id="OKM-hP-H2B"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="400" id="Pcx-Im-ZvK"/>
+                            <constraint firstItem="SJT-UG-mKm" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" id="XGv-e6-hy6"/>
+                            <constraint firstItem="SJT-UG-mKm" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="20" id="jF6-KD-ubi"/>
                             <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="scZ-nm-C7I"/>
                         </constraints>
                     </view>
@@ -75,6 +84,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chicago Skyline" width="4000" height="2250"/>
         <image name="Gwen Coffee" width="2042" height="1538"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

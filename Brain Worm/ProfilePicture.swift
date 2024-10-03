@@ -15,5 +15,7 @@ import UIKit
 			}
 			layer.cornerRadius = frame.width / 2
 			layer.masksToBounds = true
+			layer.borderColor = #colorLiteral(red: 0.4309999943, green: 0.8199999928, blue: 0.9879999757, alpha: 1)
+			layer.borderWidth = 4.7
 		}
 }
