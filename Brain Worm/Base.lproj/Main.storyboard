@@ -28,24 +28,83 @@
                                     <constraint firstAttribute="width" secondItem="zVG-zg-niU" secondAttribute="height" multiplier="1:1" id="8zT-1I-Y6m"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-KN-Ozq">
+                                <rect key="frame" x="123" y="371" width="147" height="91.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gwen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQi-Jo-I69" userLabel="Name">
+                                        <rect key="frame" x="22.666666666666664" y="0.0" width="101.66666666666669" height="47.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@PortableDoughnut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-GS-bHc" userLabel="Username">
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="147" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" name="Secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="she/her" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc0-wX-cKF" userLabel="Pronouns">
+                                        <rect key="frame" x="45.666666666666657" y="71.333333333333314" width="56" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-j7-edt" userLabel="Bio">
+                                <rect key="frame" x="20" y="466.66666666666669" width="353" height="108.33333333333331"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis pharetra faucibus. In hac habitasse platea dictumst. Pellentesque fermentum tristique interdum. Quisque accumsan lacus vitae posuere lacinia. Nam leo urna, faucibus nec rhoncus ac, molestie ut mi. Phasellus eu congue nisl. Nulla et fermentum nulla. Curabitur at augue libero. Aliquam semper lacus quis mauris ultricies, quis maximus ligula convallis. Cras porta lacus eu metus tincidunt lobortis. Proin eleifend nisl ut tellus consequat molestie. Phasellus convallis sapien quis libero ultricies, quis auctor tellus bibendum.</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
+                                <rect key="frame" x="20" y="599" width="353" height="83.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-Go-TRY" userLabel="Post Content">
+                                        <rect key="frame" x="20.666666666666657" y="0.0" width="311.66666666666674" height="40.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Aug. 11 2024" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-hi-PlE" userLabel="Timestamp">
+                                        <rect key="frame" x="20" y="40.666666666666629" width="313" height="43"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wJd-hi-PlE" firstAttribute="leading" secondItem="Gey-eC-Jku" secondAttribute="leadingMargin" constant="20" id="Svc-kw-0yQ"/>
+                                    <constraint firstAttribute="width" secondItem="Gey-eC-Jku" secondAttribute="height" multiplier="38:9" id="uEs-Ux-W2i"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pLb-Wu-4db"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="zVG-zg-niU" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="80" id="EpI-yh-8r2"/>
                             <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="Gi3-4z-aWV"/>
+                            <constraint firstItem="Gey-eC-Jku" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" constant="20" id="Gp7-hw-V2J"/>
+                            <constraint firstItem="pLb-Wu-4db" firstAttribute="trailing" secondItem="ECE-j7-edt" secondAttribute="trailing" constant="20" id="KC8-YZ-iop"/>
                             <constraint firstItem="pLb-Wu-4db" firstAttribute="trailing" secondItem="SJT-UG-mKm" secondAttribute="trailing" id="OKM-hP-H2B"/>
                             <constraint firstAttribute="bottomMargin" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="400" id="Pcx-Im-ZvK"/>
+                            <constraint firstItem="pLb-Wu-4db" firstAttribute="trailing" secondItem="Gey-eC-Jku" secondAttribute="trailing" constant="20" id="W4Y-0d-8OS"/>
                             <constraint firstItem="SJT-UG-mKm" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" id="XGv-e6-hy6"/>
+                            <constraint firstItem="d4X-KN-Ozq" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="ZHJ-xy-HUx"/>
                             <constraint firstItem="SJT-UG-mKm" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="20" id="jF6-KD-ubi"/>
+                            <constraint firstItem="ECE-j7-edt" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" constant="20" id="nIo-Fo-TFL"/>
+                            <constraint firstItem="ECE-j7-edt" firstAttribute="top" secondItem="d4X-KN-Ozq" secondAttribute="bottom" constant="4" id="rwi-7k-OzT"/>
                             <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="scZ-nm-C7I"/>
+                            <constraint firstItem="Gey-eC-Jku" firstAttribute="top" secondItem="ECE-j7-edt" secondAttribute="bottom" constant="24" id="tde-N5-Cn5"/>
+                            <constraint firstItem="d4X-KN-Ozq" firstAttribute="top" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="2" id="tpw-kI-ri5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="7C2-PZ-IHI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGT-NC-664" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-623" y="127"/>
+            <point key="canvasLocation" x="-623.66412213740455" y="126.7605633802817"/>
         </scene>
         <!--Home-->
         <scene sceneID="WHD-Ad-gja">
@@ -95,6 +154,12 @@
         </namedColor>
         <namedColor name="Background">
             <color red="1" green="0.98799997568130493" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.4309999942779541" green="0.81999999284744263" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
