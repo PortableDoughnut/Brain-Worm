@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="nrT-j8-31K">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gwen Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="zVG-zg-niU" userLabel="Profile Picture" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
+                                <rect key="frame" x="116" y="99" width="161" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zVG-zg-niU" secondAttribute="height" multiplier="1:1" id="8zT-1I-Y6m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pLb-Wu-4db"/>
                         <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="zVG-zg-niU" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="40" id="EpI-yh-8r2"/>
+                            <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="Gi3-4z-aWV"/>
+                            <constraint firstItem="pLb-Wu-4db" firstAttribute="bottom" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="509" id="lcu-qO-6zH"/>
+                            <constraint firstItem="zVG-zg-niU" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="scZ-nm-C7I"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="7C2-PZ-IHI"/>
                 </viewController>
@@ -61,6 +75,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Gwen Coffee" width="2042" height="1538"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
