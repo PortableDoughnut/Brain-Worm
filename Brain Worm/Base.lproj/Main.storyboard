@@ -11,7 +11,7 @@
         <!--Profile-->
         <scene sceneID="mQG-tb-gr7">
             <objects>
-                <viewController id="Wop-85-jVu" sceneMemberID="viewController">
+                <viewController id="Wop-85-jVu" customClass="ProfileViewController" customModule="Brain_Worm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrT-j8-31K">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,15 +51,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-j7-edt" userLabel="Bio">
-                                <rect key="frame" x="20" y="466.66666666666669" width="353" height="108.33333333333331"/>
-                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis pharetra faucibus. In hac habitasse platea dictumst. Pellentesque fermentum tristique interdum. Quisque accumsan lacus vitae posuere lacinia. Nam leo urna, faucibus nec rhoncus ac, molestie ut mi. Phasellus eu congue nisl. Nulla et fermentum nulla. Curabitur at augue libero. Aliquam semper lacus quis mauris ultricies, quis maximus ligula convallis. Cras porta lacus eu metus tincidunt lobortis. Proin eleifend nisl ut tellus consequat molestie. Phasellus convallis sapien quis libero ultricies, quis auctor tellus bibendum.</mutableString>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-j7-edt" userLabel="Bio">
+                                <rect key="frame" x="20" y="466.66666666666669" width="353" height="32.666666666666686"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis pharetra faucibus. In hac habitasse platea dictumst. Pellentesque fermentum tristique interdum. Quisque accumsan lacus vitae posuere lacinia. Nam leo urna, faucibus nec rhoncus ac, molestie ut mi. Phasellus eu congue nisl. Nulla et fermentum nulla. Curabitur at augue libero. Aliquam semper lacus quis mauris ultricies, quis maximus ligula convallis. Cras porta lacus eu metus tincidunt lobortis. Proin eleifend nisl ut tellus consequat molestie. Phasellus convallis sapien quis libero ultricies, quis auctor tellus bibendum.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
-                                <rect key="frame" x="20" y="599" width="353" height="83.666666666666629"/>
+                                <rect key="frame" x="20" y="523.33333333333337" width="353" height="83.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-Go-TRY" userLabel="Post Content">
                                         <rect key="frame" x="20.666666666666657" y="0.0" width="311.66666666666674" height="40.666666666666664"/>
@@ -101,6 +101,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="7C2-PZ-IHI"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="ECE-j7-edt" id="crd-NH-m8c"/>
+                        <outlet property="postContentLabel" destination="Z7O-Go-TRY" id="ybX-eu-iAn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGT-NC-664" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
