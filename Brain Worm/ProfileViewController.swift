@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+	@IBOutlet weak var usernameLabel: UILabel!
 	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var bioLabel: UILabel!
 	@IBOutlet weak var postContentLabel: UILabel!
@@ -34,6 +35,9 @@ class ProfileViewController: UIViewController {
 		setStyle(style: bioTextStyle, label: bioLabel)
 		
 		let nameTextStyle = NSMutableParagraphStyle()
+		setLineHeight(style: nameTextStyle, label: nameLabel, constant: 1.1)
+		nameTextStyle.alignment = .center
+		setStyle(style: nameTextStyle, label: nameLabel)
     }
     
 
