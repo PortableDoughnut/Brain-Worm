@@ -58,7 +58,7 @@
                                 <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
                                 <rect key="frame" x="20" y="561.33333333333337" width="353" height="83.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-Go-TRY" userLabel="Post Content">
@@ -68,9 +68,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Aug. 11 2024" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-hi-PlE" userLabel="Timestamp">
-                                        <rect key="frame" x="20" y="40.666666666666629" width="313" height="43"/>
+                                        <rect key="frame" x="20" y="36" width="313" height="47.666666666666657"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <color key="textColor" name="Text"/>
+                                        <color key="textColor" name="Timestamp"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -106,8 +106,6 @@
                         <outlet property="nameLabel" destination="VQi-Jo-I69" id="uJ3-yf-acx"/>
                         <outlet property="postContentLabel" destination="Z7O-Go-TRY" id="ybX-eu-iAn"/>
                         <outlet property="postLabel" destination="Z7O-Go-TRY" id="L0V-bj-vnH"/>
-                        <outlet property="profileBackgroundImage" destination="SJT-UG-mKm" id="h5h-VH-bzE"/>
-                        <outlet property="profilePictureImage" destination="zVG-zg-niU" id="jqv-HM-TQ2"/>
                         <outlet property="timestampLabel" destination="wJd-hi-PlE" id="wzg-7t-8kk"/>
                         <outlet property="usernameLabel" destination="UC5-GS-bHc" id="8mm-xA-8Iu"/>
                     </connections>
@@ -170,6 +168,9 @@
         </namedColor>
         <namedColor name="Text">
             <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Timestamp">
+            <color red="0.13725490196078433" green="0.10980392156862745" blue="0.0039215686274509803" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
