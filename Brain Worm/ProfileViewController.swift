@@ -8,11 +8,21 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var bioLabel: UILabel!
 	@IBOutlet weak var postContentLabel: UILabel!
 	
 	func setLineHeight( style: NSMutableParagraphStyle, label: UILabel, constant: Double) {
 		style.lineSpacing = label.font.xHeight * constant
+	}
+	
+	func setStyle(style: NSMutableParagraphStyle, label: UILabel) {
+		let textString = NSAttributedString(
+			string: label.text ?? "",
+			attributes: [NSAttributedString.Key.paragraphStyle: style]
+			)
+		
+		label.attributedText = textString
 	}
 	
 	override func viewDidLoad() {
@@ -21,13 +31,9 @@ class ProfileViewController: UIViewController {
         let bioTextStyle = NSMutableParagraphStyle()
 		setLineHeight(style: bioTextStyle, label: bioLabel, constant: 1.3)
 		bioTextStyle.alignment = .center
+		setStyle(style: bioTextStyle, label: bioLabel)
 		
-		let bioTextString = NSAttributedString(
-			string: bioLabel.text ?? "",
-			attributes: [NSAttributedString.Key.paragraphStyle: bioTextStyle]
-			)
-		
-		bioLabel.attributedText = bioTextString
+		let nameTextStyle = NSMutableParagraphStyle()
     }
     
 
