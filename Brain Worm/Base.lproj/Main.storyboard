@@ -106,6 +106,7 @@
                         <outlet property="nameLabel" destination="VQi-Jo-I69" id="uJ3-yf-acx"/>
                         <outlet property="postContentLabel" destination="Z7O-Go-TRY" id="ybX-eu-iAn"/>
                         <outlet property="postLabel" destination="Z7O-Go-TRY" id="L0V-bj-vnH"/>
+                        <outlet property="profilePictureImage" destination="zVG-zg-niU" id="6Hf-rH-oC5"/>
                         <outlet property="timestampLabel" destination="wJd-hi-PlE" id="wzg-7t-8kk"/>
                         <outlet property="usernameLabel" destination="UC5-GS-bHc" id="8mm-xA-8Iu"/>
                     </connections>

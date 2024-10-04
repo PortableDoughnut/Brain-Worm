@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+	@IBOutlet weak var profilePictureImage: ProfilePicture!
 	@IBOutlet weak var timestampLabel: UILabel!
 	@IBOutlet weak var usernameLabel: UILabel!
 	@IBOutlet weak var postLabel: UILabel!
@@ -20,47 +21,24 @@ class ProfileViewController: UIViewController {
 		case center
 	}
 	
-	func setLineHeight( style: NSMutableParagraphStyle, label: UILabel, constant: Double) {
-		style.lineSpacing = label.font.xHeight * constant
-	}
 	
-	func setStyle(style: NSMutableParagraphStyle, label: UILabel, letterSpacing: Double) {
-		let textString = NSAttributedString(
-			string: label.text ?? "",
-			attributes: [NSAttributedString.Key.paragraphStyle: style, .kern: letterSpacing]
-			)
-		
-		
-		label.attributedText = textString
-	}
-	
-	func makeStyle(label: UILabel, alignment: Alignment, lineHeight: Double, letterSpacing: Double) {
-		let textStyle = NSMutableParagraphStyle()
-		setLineHeight(style: textStyle, label: label, constant: lineHeight)
-		
-		switch alignment {
-			case .center:
-				textStyle.alignment = .center
-			case .left:
-				textStyle.alignment = .left
-		}
-		
-		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
-		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
-	}
 	
 	func styalizeText() {
-		makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
-		makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
-		makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2, letterSpacing: -0.45)
-		makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5, letterSpacing: 0.8)
-		makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.6, letterSpacing: 1)
+		var setFont: TypographyController = .init()
+		
+		setFont.makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
+		setFont.makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
+		setFont.makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2, letterSpacing: -0.45)
+		setFont.makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5, letterSpacing: 0.8)
+		setFont.makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.6, letterSpacing: 1)
 	}
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
 		styalizeText()
+		profilePictureImage.layer.borderColor = #colorLiteral(red: 0.4309999943, green: 0.8199999928, blue: 0.9879999757, alpha: 1)
+		profilePictureImage.layer.borderWidth = 4.7
     }
     
 
