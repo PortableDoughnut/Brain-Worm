@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController {
 	
 	
 	func styalizeText() {
-		var setFont: TypographyController = .init()
+		let setFont: TypographyController = .init()
 		
 		setFont.makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
 		setFont.makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
