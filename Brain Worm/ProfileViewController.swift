@@ -24,16 +24,17 @@ class ProfileViewController: UIViewController {
 		style.lineSpacing = label.font.xHeight * constant
 	}
 	
-	func setStyle(style: NSMutableParagraphStyle, label: UILabel) {
+	func setStyle(style: NSMutableParagraphStyle, label: UILabel, letterSpacing: Double) {
 		let textString = NSAttributedString(
 			string: label.text ?? "",
-			attributes: [NSAttributedString.Key.paragraphStyle: style]
+			attributes: [NSAttributedString.Key.paragraphStyle: style, .kern: letterSpacing]
 			)
+		
 		
 		label.attributedText = textString
 	}
 	
-	func makeStyle(label: UILabel, alignment: Alignment, lineHeight: Double) {
+	func makeStyle(label: UILabel, alignment: Alignment, lineHeight: Double, letterSpacing: Double) {
 		let textStyle = NSMutableParagraphStyle()
 		setLineHeight(style: textStyle, label: label, constant: lineHeight)
 		
@@ -44,17 +45,18 @@ class ProfileViewController: UIViewController {
 				textStyle.alignment = .left
 		}
 		
-		setStyle(style: textStyle, label: label)
+		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
+		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
 	}
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
-		makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3)
-		makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1)
-		makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2)
-		makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5)
-		makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.1)
+		makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
+		makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
+		makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2, letterSpacing: -0.45)
+		makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5, letterSpacing: 0.8)
+		makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.1, letterSpacing: 1)
     }
     
 
