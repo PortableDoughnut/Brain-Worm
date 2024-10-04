@@ -105,6 +105,7 @@
                         <outlet property="bioLabel" destination="ECE-j7-edt" id="crd-NH-m8c"/>
                         <outlet property="nameLabel" destination="VQi-Jo-I69" id="uJ3-yf-acx"/>
                         <outlet property="postContentLabel" destination="Z7O-Go-TRY" id="ybX-eu-iAn"/>
+                        <outlet property="usernameLabel" destination="UC5-GS-bHc" id="8mm-xA-8Iu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGT-NC-664" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

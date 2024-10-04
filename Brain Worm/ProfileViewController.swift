@@ -12,6 +12,11 @@ class ProfileViewController: UIViewController {
 	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var bioLabel: UILabel!
 	@IBOutlet weak var postContentLabel: UILabel!
+
+	enum Alignment {
+		case left
+		case center
+	}
 	
 	func setLineHeight( style: NSMutableParagraphStyle, label: UILabel, constant: Double) {
 		style.lineSpacing = label.font.xHeight * constant
@@ -26,18 +31,25 @@ class ProfileViewController: UIViewController {
 		label.attributedText = textString
 	}
 	
+	func makeStyle(label: UILabel, alignment: Alignment, lineHeight: Double) {
+		let textStyle = NSMutableParagraphStyle()
+		setLineHeight(style: textStyle, label: label, constant: lineHeight)
+		
+		switch alignment {
+			case .center:
+				textStyle.alignment = .center
+			case .left:
+				textStyle.alignment = .left
+		}
+		
+		setStyle(style: textStyle, label: label)
+	}
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
-        let bioTextStyle = NSMutableParagraphStyle()
-		setLineHeight(style: bioTextStyle, label: bioLabel, constant: 1.3)
-		bioTextStyle.alignment = .center
-		setStyle(style: bioTextStyle, label: bioLabel)
-		
-		let nameTextStyle = NSMutableParagraphStyle()
-		setLineHeight(style: nameTextStyle, label: nameLabel, constant: 1.1)
-		nameTextStyle.alignment = .center
-		setStyle(style: nameTextStyle, label: nameLabel)
+		makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3)
+		makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1)
     }
     
 
