@@ -123,8 +123,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-Pe-0a8" userLabel="Posts">
-                                <rect key="frame" x="32" y="59" width="366" height="137.33333333333334"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-Pe-0a8" userLabel="Posts">
+                                <rect key="frame" x="32" y="59" width="366" height="323.33333333333331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-fE-UJZ" userLabel="Astarion Post">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="137.33333333333334"/>
@@ -154,9 +154,15 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I cold look in the mirror and admire my own beauty" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-8S-qbq">
-                                                <rect key="frame" x="0.0" y="96.666666666666657" width="342.33333333333331" height="40.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="74" width="342.33333333333331" height="40.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="Text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="5 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-m3-76Q">
+                                                <rect key="frame" x="0.0" y="126.66666666666667" width="30" height="10.666666666666671"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" name="Timestamp"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -164,9 +170,61 @@
                                             <constraint firstAttribute="width" secondItem="sGJ-fE-UJZ" secondAttribute="height" multiplier="8:3" id="KWK-Ls-HXn"/>
                                         </constraints>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cme-St-1Yt" userLabel="Post Seperator">
+                                        <rect key="frame" x="0.0" y="161.33333333333334" width="366" height="0.66666666666665719"/>
+                                        <color key="backgroundColor" name="Secondary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.78000000000000003" id="2XW-7T-I0X"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-0H-kG4" userLabel="Shadowheart Post">
+                                        <rect key="frame" x="0.0" y="186" width="366" height="137.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-1G-juN" userLabel="User Info">
+                                                <rect key="frame" x="0.0" y="0.0" width="250.66666666666666" height="62"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadowheart" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-Nf-dnX" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NIl-Nf-dnX" secondAttribute="height" multiplier="1:1" id="6CF-by-9jf"/>
+                                                            <constraint firstAttribute="width" constant="62" id="O65-zw-WRb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shadowheart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-L6-hsf">
+                                                        <rect key="frame" x="74" y="0.0" width="109" height="62"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" name="Text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Shart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlz-Wk-6nE">
+                                                        <rect key="frame" x="195" y="0.0" width="55.666666666666657" height="62"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maybe I should cut my bangs..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-kf-xdX">
+                                                <rect key="frame" x="0.0" y="81.666666666666686" width="236" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f1-BV-q4I">
+                                                <rect key="frame" x="0.0" y="121.6666666666667" width="28" height="15.666666666666671"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" name="Timestamp"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nhG-0H-kG4" secondAttribute="height" multiplier="8:3" id="POG-GV-R7l"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="sGJ-fE-UJZ" firstAttribute="leading" secondItem="aZq-Pe-0a8" secondAttribute="leadingMargin" id="5ot-qH-IVL"/>
+                                    <constraint firstItem="nhG-0H-kG4" firstAttribute="width" secondItem="nhG-0H-kG4" secondAttribute="height" multiplier="8:3" id="MtS-xg-xs7"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="sGJ-fE-UJZ" secondAttribute="trailing" id="bkh-Xe-u15"/>
                                 </constraints>
                             </stackView>
@@ -210,6 +268,7 @@
         <image name="Astarion" width="1873" height="1855"/>
         <image name="Chicago Skyline" width="4000" height="2250"/>
         <image name="Gwen Coffee" width="2042" height="1538"/>
+        <image name="Shadowheart" width="1873" height="1855"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
