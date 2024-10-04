@@ -8,7 +8,9 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+	@IBOutlet weak var timestampLabel: UILabel!
 	@IBOutlet weak var usernameLabel: UILabel!
+	@IBOutlet weak var postLabel: UILabel!
 	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var bioLabel: UILabel!
 	@IBOutlet weak var postContentLabel: UILabel!
@@ -50,6 +52,9 @@ class ProfileViewController: UIViewController {
 
 		makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3)
 		makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1)
+		makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2)
+		makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5)
+		makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.1)
     }
     
 
