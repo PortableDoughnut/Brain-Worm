@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-Pe-0a8" userLabel="Posts">
-                                <rect key="frame" x="32" y="59" width="366" height="323.33333333333331"/>
+                                <rect key="frame" x="32" y="59" width="366" height="695.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-fE-UJZ" userLabel="Astarion Post">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="137.33333333333334"/>
@@ -218,14 +218,124 @@
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="nhG-0H-kG4" secondAttribute="height" multiplier="8:3" id="MtS-xg-xs7"/>
                                             <constraint firstAttribute="width" secondItem="nhG-0H-kG4" secondAttribute="height" multiplier="8:3" id="POG-GV-R7l"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYJ-fP-TOk" userLabel="Post Seperator">
+                                        <rect key="frame" x="0.0" y="347.33333333333331" width="366" height="0.66666666666668561"/>
+                                        <color key="backgroundColor" name="Secondary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.78000000000000003" id="FNj-K7-587"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rce-TD-erX" userLabel="Gwen Post">
+                                        <rect key="frame" x="0.0" y="372" width="366" height="137.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QJA-jR-25x" userLabel="User Info">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="62"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gwen Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="Dhb-ZV-b0J" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Dhb-ZV-b0J" secondAttribute="height" multiplier="1:1" id="s03-cl-abM"/>
+                                                            <constraint firstAttribute="width" constant="62" id="sRo-H6-zMv"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Gwen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-Pp-FRq">
+                                                        <rect key="frame" x="74" y="0.0" width="46.333333333333343" height="62"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" name="Text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@PortableDoughnut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-ur-Awc">
+                                                        <rect key="frame" x="132.33333333333337" y="0.0" width="152.66666666666663" height="62"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the gayest woman alive." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-vA-Ptn">
+                                                <rect key="frame" x="0.0" y="81.666666666666629" width="218" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-BJ-T6N">
+                                                <rect key="frame" x="0.0" y="121.66666666666664" width="34.666666666666664" height="15.666666666666671"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" name="Timestamp"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rce-TD-erX" secondAttribute="height" multiplier="8:3" id="wTg-I1-W0k"/>
+                                            <constraint firstAttribute="width" secondItem="rce-TD-erX" secondAttribute="height" multiplier="8:3" id="yP3-Hf-6fp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-BM-hX2" userLabel="Post Seperator">
+                                        <rect key="frame" x="0.0" y="533.33333333333337" width="366" height="0.66666666666662877"/>
+                                        <color key="backgroundColor" name="Secondary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.78000000000000003" id="VNb-yq-lFZ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-fi-I7c" userLabel="Karlach Post">
+                                        <rect key="frame" x="0.0" y="558" width="366" height="137.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YkP-Br-4BK" userLabel="User Info">
+                                                <rect key="frame" x="0.0" y="0.0" width="236.66666666666666" height="62"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Karlach" translatesAutoresizingMaskIntoConstraints="NO" id="bzk-ee-XEm" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="62" id="2wV-eV-rQG"/>
+                                                            <constraint firstAttribute="width" secondItem="bzk-ee-XEm" secondAttribute="height" multiplier="1:1" id="ovf-gr-rEM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Karlach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE9-FT-hRd">
+                                                        <rect key="frame" x="74" y="0.0" width="62" height="62"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" name="Text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@HotMama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbV-pQ-eK1">
+                                                        <rect key="frame" x="148" y="0.0" width="88.666666666666686" height="62"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <color key="textColor" name="Secondary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I could give everyone a hug" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oN1-RR-M7m">
+                                                <rect key="frame" x="0.0" y="81.666666666666629" width="254.66666666666666" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-7k-1jX">
+                                                <rect key="frame" x="0.0" y="121.66666666666664" width="31" height="15.666666666666671"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" name="Timestamp"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="kIv-mc-bTh"/>
+                                            <constraint firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="sri-wu-hOp"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="sGJ-fE-UJZ" firstAttribute="leading" secondItem="aZq-Pe-0a8" secondAttribute="leadingMargin" id="5ot-qH-IVL"/>
-                                    <constraint firstItem="nhG-0H-kG4" firstAttribute="width" secondItem="nhG-0H-kG4" secondAttribute="height" multiplier="8:3" id="MtS-xg-xs7"/>
+                                    <constraint firstItem="LRq-fi-I7c" firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="OZ2-iG-ohW"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="sGJ-fE-UJZ" secondAttribute="trailing" id="bkh-Xe-u15"/>
+                                    <constraint firstItem="LRq-fi-I7c" firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="hdn-5d-geY"/>
+                                    <constraint firstItem="rce-TD-erX" firstAttribute="width" secondItem="rce-TD-erX" secondAttribute="height" multiplier="8:3" id="lEt-98-tew"/>
+                                    <constraint firstItem="LRq-fi-I7c" firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="m2y-cQ-KkS"/>
+                                    <constraint firstItem="rce-TD-erX" firstAttribute="width" secondItem="rce-TD-erX" secondAttribute="height" multiplier="8:3" id="soD-Ww-hXN"/>
+                                    <constraint firstItem="LRq-fi-I7c" firstAttribute="width" secondItem="LRq-fi-I7c" secondAttribute="height" multiplier="8:3" id="wvH-k7-Soe"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -268,6 +378,7 @@
         <image name="Astarion" width="1873" height="1855"/>
         <image name="Chicago Skyline" width="4000" height="2250"/>
         <image name="Gwen Coffee" width="2042" height="1538"/>
+        <image name="Karlach" width="1920" height="1920"/>
         <image name="Shadowheart" width="1873" height="1855"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
