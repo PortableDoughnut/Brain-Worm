@@ -124,46 +124,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiz-X8-W0B" userLabel="Home Stack">
-                                <rect key="frame" x="0.0" y="59" width="483" height="790"/>
+                                <rect key="frame" x="0.0" y="59" width="523.33333333333337" height="790"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Worm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOm-Mw-iqp">
-                                        <rect key="frame" x="189.66666666666666" y="0.0" width="103.66666666666666" height="23.333333333333332"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
-                                        <color key="textColor" name="Primary"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-Pe-0a8" userLabel="Posts">
-                                        <rect key="frame" x="12" y="42.666666666666686" width="459" height="747.33333333333326"/>
+                                        <rect key="frame" x="11.999999999999972" y="0.0" width="499.33333333333326" height="790"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-fE-UJZ" userLabel="Astarion Post">
-                                                <rect key="frame" x="0.0" y="0.0" width="459" height="139.66666666666666"/>
+                                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-fE-UJZ" userLabel="Astarion Post">
+                                                <rect key="frame" x="0.0" y="0.0" width="499.33333333333331" height="151.66666666666666"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GFM-67-thd" userLabel="User Info">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="257" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Astarion" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-4R-36H" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="62" id="clb-x9-KRj"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="clb-x9-KRj"/>
                                                                     <constraint firstAttribute="width" secondItem="HaA-4R-36H" secondAttribute="height" multiplier="1:1" id="kc3-t0-Hhe"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Astarion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwZ-PE-rhH">
-                                                                <rect key="frame" x="74" y="0.0" width="69" height="62"/>
+                                                                <rect key="frame" x="52" y="0.0" width="69" height="40"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <color key="textColor" name="Text"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@SuckerForYou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hK-3r-1rb">
-                                                                <rect key="frame" x="155" y="0.0" width="120" height="62"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <rect key="frame" x="133" y="0.0" width="124" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                                 <color key="textColor" name="Secondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I cold look in the mirror and admire my own beauty" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-8S-qbq">
-                                                        <rect key="frame" x="0.0" y="77.999999999999986" width="343.66666666666669" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I could look in the mirror and admire my own beauty" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-8S-qbq">
+                                                        <rect key="frame" x="0.0" y="71" width="351.33333333333331" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Vcn-qW-hsg"/>
                                                         </constraints>
@@ -172,7 +166,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="5 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-m3-76Q">
-                                                        <rect key="frame" x="0.0" y="123.99999999999999" width="30" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="131.66666666666666" width="30" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="oTE-LI-UCn"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" name="Timestamp"/>
                                                         <nil key="highlightedColor"/>
@@ -183,47 +180,47 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cme-St-1Yt" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="163.66666666666663" width="459" height="0.66666666666665719"/>
+                                                <rect key="frame" x="0.0" y="175.66666666666666" width="499.33333333333331" height="1"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="2XW-7T-I0X"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-0H-kG4" userLabel="Shadowheart Post">
-                                                <rect key="frame" x="0.0" y="188.33333333333331" width="459" height="172"/>
+                                                <rect key="frame" x="0.0" y="200.66666666666669" width="499.33333333333331" height="187.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-1G-juN" userLabel="User Info">
-                                                        <rect key="frame" x="0.0" y="0.0" width="250.66666666666666" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="230.66666666666666" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadowheart" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-Nf-dnX" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="NIl-Nf-dnX" secondAttribute="height" multiplier="1:1" id="6CF-by-9jf"/>
-                                                                    <constraint firstAttribute="width" constant="62" id="O65-zw-WRb"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="O65-zw-WRb"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shadowheart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-L6-hsf">
-                                                                <rect key="frame" x="74" y="0.0" width="109" height="62"/>
+                                                                <rect key="frame" x="52" y="0.0" width="109" height="40"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <color key="textColor" name="Text"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Shart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlz-Wk-6nE">
-                                                                <rect key="frame" x="195" y="0.0" width="55.666666666666657" height="62"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <rect key="frame" x="173" y="0.0" width="57.666666666666657" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                                 <color key="textColor" name="Secondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maybe I should cut my bangs..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-kf-xdX">
-                                                        <rect key="frame" x="0.0" y="101.33333333333331" width="188" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="98" width="188" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f1-BV-q4I">
-                                                        <rect key="frame" x="0.0" y="156.33333333333331" width="28" height="15.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="171.66666666666663" width="28" height="15.666666666666657"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" name="Timestamp"/>
                                                         <nil key="highlightedColor"/>
@@ -234,47 +231,47 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYJ-fP-TOk" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="384.33333333333331" width="459" height="0.66666666666668561"/>
+                                                <rect key="frame" x="0.0" y="412" width="499.33333333333331" height="0.66666666666668561"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="FNj-K7-587"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rce-TD-erX" userLabel="Gwen Post">
-                                                <rect key="frame" x="0.0" y="409" width="459" height="172.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="436.66666666666669" width="499.33333333333331" height="187.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QJA-jR-25x" userLabel="User Info">
-                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="268.66666666666669" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gwen Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="Dhb-ZV-b0J" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Dhb-ZV-b0J" secondAttribute="height" multiplier="1:1" id="s03-cl-abM"/>
-                                                                    <constraint firstAttribute="width" constant="62" id="sRo-H6-zMv"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="sRo-H6-zMv"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Gwen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-Pp-FRq">
-                                                                <rect key="frame" x="74" y="0.0" width="46.333333333333343" height="62"/>
+                                                                <rect key="frame" x="52" y="0.0" width="46.333333333333343" height="40"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <color key="textColor" name="Text"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@PortableDoughnut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-ur-Awc">
-                                                                <rect key="frame" x="132.33333333333337" y="0.0" width="152.66666666666663" height="62"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <rect key="frame" x="110.33333333333333" y="0.0" width="158.33333333333337" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                                 <color key="textColor" name="Secondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the gayest woman alive." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-vA-Ptn">
-                                                        <rect key="frame" x="0.0" y="101.66666666666669" width="174" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="97.999999999999943" width="174" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-BJ-T6N">
-                                                        <rect key="frame" x="0.0" y="156.66666666666669" width="34.666666666666664" height="15.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="171.66666666666669" width="34.666666666666664" height="15.666666666666657"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" name="Timestamp"/>
                                                         <nil key="highlightedColor"/>
@@ -285,41 +282,41 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-BM-hX2" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="605.33333333333337" width="459" height="0.66666666666662877"/>
+                                                <rect key="frame" x="0.0" y="648" width="499.33333333333331" height="0.66666666666662877"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="VNb-yq-lFZ"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-fi-I7c" userLabel="Karlach Post">
-                                                <rect key="frame" x="0.0" y="630" width="459" height="117.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="672.66666666666663" width="499.33333333333331" height="117.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YkP-Br-4BK" userLabel="User Info">
-                                                        <rect key="frame" x="0.0" y="0.0" width="236.66666666666666" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="236.33333333333334" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Karlach" translatesAutoresizingMaskIntoConstraints="NO" id="bzk-ee-XEm" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="62" id="2wV-eV-rQG"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="2wV-eV-rQG"/>
                                                                     <constraint firstAttribute="width" secondItem="bzk-ee-XEm" secondAttribute="height" multiplier="1:1" id="ovf-gr-rEM"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Karlach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE9-FT-hRd">
-                                                                <rect key="frame" x="74" y="0.0" width="62" height="62"/>
+                                                                <rect key="frame" x="52" y="0.0" width="81" height="40"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <color key="textColor" name="Text"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@HotMama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbV-pQ-eK1">
-                                                                <rect key="frame" x="148" y="0.0" width="88.666666666666686" height="62"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <rect key="frame" x="145" y="0.0" width="91.333333333333314" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                                 <color key="textColor" name="Secondary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to give everyone a hug sooo bad" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oN1-RR-M7m">
-                                                        <rect key="frame" x="0.0" y="74" width="236.66666666666666" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="62.999999999999993" width="236.33333333333334" height="15.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
@@ -358,6 +355,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="NO2-sP-QJw"/>
+                    <connections>
+                        <outlet property="astarionNameLabel" destination="cwZ-PE-rhH" id="drE-Ng-pv2"/>
+                        <outlet property="astarionPostLabel" destination="UGV-8S-qbq" id="hZv-uh-xaN"/>
+                        <outlet property="astarionTimestampLabel" destination="GHc-m3-76Q" id="AmV-R4-zuj"/>
+                        <outlet property="astarionUsernameLabel" destination="0hK-3r-1rb" id="5W7-NR-Q0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcY-oi-kNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,9 +402,6 @@
         <namedColor name="Background">
             <color red="1" green="0.98799997568130493" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Primary">
-            <color red="0.98400002717971802" green="0.81599998474121094" blue="0.054999999701976776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Secondary">
             <color red="0.4309999942779541" green="0.81999999284744263" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -409,7 +409,7 @@
             <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Timestamp">
-            <color red="0.13725490196078433" green="0.10980392156862745" blue="0.0039215686274509803" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
