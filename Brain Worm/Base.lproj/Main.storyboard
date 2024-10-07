@@ -186,7 +186,7 @@
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="2XW-7T-I0X"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-0H-kG4" userLabel="Shadowheart Post">
+                                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-0H-kG4" userLabel="Shadowheart Post">
                                                 <rect key="frame" x="0.0" y="200.66666666666669" width="499.33333333333331" height="187.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-1G-juN" userLabel="User Info">
@@ -360,6 +360,10 @@
                         <outlet property="astarionPostLabel" destination="UGV-8S-qbq" id="hZv-uh-xaN"/>
                         <outlet property="astarionTimestampLabel" destination="GHc-m3-76Q" id="AmV-R4-zuj"/>
                         <outlet property="astarionUsernameLabel" destination="0hK-3r-1rb" id="5W7-NR-Q0v"/>
+                        <outlet property="shadowheartNameLabel" destination="0mb-L6-hsf" id="63J-zy-TJW"/>
+                        <outlet property="shadowheartPostLabel" destination="d9g-kf-xdX" id="hlh-ch-zTC"/>
+                        <outlet property="shadowheartTimestampLabel" destination="9f1-BV-q4I" id="hOH-3l-Nv7"/>
+                        <outlet property="shadowheartUsernameLabel" destination="Dlz-Wk-6nE" id="Rmm-oe-0AC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcY-oi-kNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

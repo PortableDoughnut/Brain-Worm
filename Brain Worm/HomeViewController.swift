@@ -8,6 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+	@IBOutlet weak var shadowheartTimestampLabel: UILabel!
+	@IBOutlet weak var shadowheartPostLabel: UILabel!
+	@IBOutlet weak var shadowheartUsernameLabel: UILabel!
+	@IBOutlet weak var shadowheartNameLabel: UILabel!
 	@IBOutlet weak var astarionTimestampLabel: UILabel!
 	@IBOutlet weak var astarionPostLabel: UILabel!
 	@IBOutlet weak var astarionUsernameLabel: UILabel!
@@ -24,13 +28,18 @@ class HomeViewController: UIViewController {
 	}
 	
 	func setTimestampStyle(label: UILabel) {
-		
+		setFont.makeStyle(label: label, alignment: .left, lineHeight: 0.84, letterSpacing: 0.012)
 	}
 	
 	func setTextStyle() {
 		setHeaderTextStyle(label: astarionNameLabel)
 		setHeaderTextStyle(label: astarionUsernameLabel)
 		setPostStyle(label: astarionPostLabel)
+		setTimestampStyle(label: astarionTimestampLabel)
+		setHeaderTextStyle(label: shadowheartNameLabel)
+		setHeaderTextStyle(label: shadowheartUsernameLabel)
+		setPostStyle(label: shadowheartPostLabel)
+		setTimestampStyle(label: shadowheartTimestampLabel)
 	}
 	
 	override func viewDidLoad() {

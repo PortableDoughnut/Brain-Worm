@@ -38,7 +38,7 @@ class ProfileViewController: UIViewController {
 
 		styalizeText()
 		profilePictureImage.layer.borderColor = #colorLiteral(red: 0.4309999943, green: 0.8199999928, blue: 0.9879999757, alpha: 1)
-		profilePictureImage.layer.borderWidth = 4.7
+		profilePictureImage.layer.borderWidth = 8.12
     }
     
 
