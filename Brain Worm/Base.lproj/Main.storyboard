@@ -75,8 +75,11 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="wJd-hi-PlE" firstAttribute="centerY" secondItem="Gey-eC-Jku" secondAttribute="centerY" id="DTf-83-oDX"/>
+                                    <constraint firstItem="Z7O-Go-TRY" firstAttribute="centerY" secondItem="Gey-eC-Jku" secondAttribute="centerY" id="M92-A9-b1n"/>
                                     <constraint firstItem="wJd-hi-PlE" firstAttribute="leading" secondItem="Gey-eC-Jku" secondAttribute="leadingMargin" constant="20" id="Svc-kw-0yQ"/>
                                     <constraint firstItem="Z7O-Go-TRY" firstAttribute="leading" secondItem="Gey-eC-Jku" secondAttribute="leadingMargin" constant="12" id="U1c-ed-J8G"/>
+                                    <constraint firstItem="Z7O-Go-TRY" firstAttribute="centerY" secondItem="Gey-eC-Jku" secondAttribute="centerY" id="cDv-5l-oX4"/>
                                     <constraint firstAttribute="width" secondItem="Gey-eC-Jku" secondAttribute="height" multiplier="38:9" id="uEs-Ux-W2i"/>
                                 </constraints>
                             </stackView>
@@ -365,6 +368,10 @@
                         <outlet property="gwenPostLabel" destination="YWd-vA-Ptn" id="2Ul-Bf-fBV"/>
                         <outlet property="gwenTimestampLabel" destination="UXm-BJ-T6N" id="CUd-0Y-NXi"/>
                         <outlet property="gwenUsernameLabel" destination="vdH-ur-Awc" id="OX8-8h-cFg"/>
+                        <outlet property="karlachNameLabel" destination="tE9-FT-hRd" id="IHZ-5w-WtL"/>
+                        <outlet property="karlachPostLabel" destination="oN1-RR-M7m" id="RiR-TS-9Eg"/>
+                        <outlet property="karlachTimestampLabel" destination="ndo-7k-1jX" id="Tkt-u2-DyN"/>
+                        <outlet property="karlachUsernameLabel" destination="lbV-pQ-eK1" id="NcF-xg-l5f"/>
                         <outlet property="shadowheartNameLabel" destination="0mb-L6-hsf" id="63J-zy-TJW"/>
                         <outlet property="shadowheartPostLabel" destination="d9g-kf-xdX" id="hlh-ch-zTC"/>
                         <outlet property="shadowheartTimestampLabel" destination="9f1-BV-q4I" id="hOH-3l-Nv7"/>
