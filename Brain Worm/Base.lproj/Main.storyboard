@@ -360,6 +360,10 @@
                         <outlet property="astarionPostLabel" destination="UGV-8S-qbq" id="hZv-uh-xaN"/>
                         <outlet property="astarionTimestampLabel" destination="GHc-m3-76Q" id="AmV-R4-zuj"/>
                         <outlet property="astarionUsernameLabel" destination="0hK-3r-1rb" id="5W7-NR-Q0v"/>
+                        <outlet property="gwenNameLabel" destination="yQc-Pp-FRq" id="uVe-LY-XeN"/>
+                        <outlet property="gwenPostLabel" destination="YWd-vA-Ptn" id="2Ul-Bf-fBV"/>
+                        <outlet property="gwenTimestampLabel" destination="UXm-BJ-T6N" id="CUd-0Y-NXi"/>
+                        <outlet property="gwenUsernameLabel" destination="vdH-ur-Awc" id="OX8-8h-cFg"/>
                         <outlet property="shadowheartNameLabel" destination="0mb-L6-hsf" id="63J-zy-TJW"/>
                         <outlet property="shadowheartPostLabel" destination="d9g-kf-xdX" id="hlh-ch-zTC"/>
                         <outlet property="shadowheartTimestampLabel" destination="9f1-BV-q4I" id="hOH-3l-Nv7"/>

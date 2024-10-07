@@ -8,6 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+	@IBOutlet weak var gwenTimestampLabel: UILabel!
+	@IBOutlet weak var gwenPostLabel: UILabel!
+	@IBOutlet weak var gwenUsernameLabel: UILabel!
+	@IBOutlet weak var gwenNameLabel: UILabel!
 	@IBOutlet weak var shadowheartTimestampLabel: UILabel!
 	@IBOutlet weak var shadowheartPostLabel: UILabel!
 	@IBOutlet weak var shadowheartUsernameLabel: UILabel!
@@ -40,6 +44,10 @@ class HomeViewController: UIViewController {
 		setHeaderTextStyle(label: shadowheartUsernameLabel)
 		setPostStyle(label: shadowheartPostLabel)
 		setTimestampStyle(label: shadowheartTimestampLabel)
+		setHeaderTextStyle(label: gwenNameLabel)
+		setHeaderTextStyle(label: gwenUsernameLabel)
+		setPostStyle(label: gwenPostLabel)
+		setTimestampStyle(label: gwenTimestampLabel)
 	}
 	
 	override func viewDidLoad() {
