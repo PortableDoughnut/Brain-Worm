@@ -100,11 +100,11 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="31"/>
                                             <color key="baseForegroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="C0p-eA-dGf" kind="show" id="cfx-cy-Bgp"/>
-                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gey-eC-Jku" firstAttribute="top" secondItem="1z1-p0-O3U" secondAttribute="top" id="jHk-lb-VbH"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pLb-Wu-4db"/>
@@ -143,15 +143,36 @@
             </objects>
             <point key="canvasLocation" x="274.88372093023253" y="126.18025751072962"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="wxx-qU-gQJ">
             <objects>
-                <viewController id="C0p-eA-dGf" sceneMemberID="viewController">
+                <viewController id="C0p-eA-dGf" customClass="SettingsViewController" customModule="Brain_Worm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rb7-DD-AYG">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="csB-Od-tgi" userLabel="Dark Mode Stack View">
+                                <rect key="frame" x="12" y="71" width="144.66666666666666" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ne-e0-391">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Dark Mode" translatesAutoresizingMaskIntoConstraints="NO" id="PYU-CZ-zVl">
+                                        <rect key="frame" x="95.666666666666671" y="0.0" width="51.000000000000014" height="31"/>
+                                        <color key="onTintColor" name="AccentColor"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tKL-MK-uuF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="csB-Od-tgi" firstAttribute="top" secondItem="tKL-MK-uuF" secondAttribute="top" constant="12" id="5dC-lD-H91"/>
+                            <constraint firstItem="csB-Od-tgi" firstAttribute="leading" secondItem="tKL-MK-uuF" secondAttribute="leading" constant="12" id="NZu-P8-VBG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VrS-tZ-b6v"/>
                 </viewController>
