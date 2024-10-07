@@ -61,14 +61,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
                                 <rect key="frame" x="20" y="641.33333333333337" width="390" height="92.333333333333371"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-Go-TRY" userLabel="Post Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="40.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the gayest woman alive." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-Go-TRY" userLabel="Post Content">
+                                        <rect key="frame" x="12" y="0.0" width="366" height="15.666666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" name="Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Aug. 11 2024" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-hi-PlE" userLabel="Timestamp">
-                                        <rect key="frame" x="20" y="36" width="350" height="56.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="11 pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-hi-PlE" userLabel="Timestamp">
+                                        <rect key="frame" x="20" y="12" width="350" height="80.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <color key="textColor" name="Timestamp"/>
                                         <nil key="highlightedColor"/>
@@ -76,6 +76,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wJd-hi-PlE" firstAttribute="leading" secondItem="Gey-eC-Jku" secondAttribute="leadingMargin" constant="20" id="Svc-kw-0yQ"/>
+                                    <constraint firstItem="Z7O-Go-TRY" firstAttribute="leading" secondItem="Gey-eC-Jku" secondAttribute="leadingMargin" constant="12" id="U1c-ed-J8G"/>
                                     <constraint firstAttribute="width" secondItem="Gey-eC-Jku" secondAttribute="height" multiplier="38:9" id="uEs-Ux-W2i"/>
                                 </constraints>
                             </stackView>

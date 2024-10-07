@@ -28,9 +28,8 @@ class ProfileViewController: UIViewController {
 		
 		setFont.makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
 		setFont.makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
-		setFont.makeStyle(label: usernameLabel, alignment: .center, lineHeight: 1.2, letterSpacing: -0.45)
-		setFont.makeStyle(label: postLabel, alignment: .left, lineHeight: 1.5, letterSpacing: 0.8)
-		setFont.makeStyle(label: timestampLabel, alignment: .left, lineHeight: 1.6, letterSpacing: 1)
+		setFont.setPostStyle(label: postLabel)
+		setFont.setTimestampStyle(label: timestampLabel)
 	}
 	
 	override func viewDidLoad() {

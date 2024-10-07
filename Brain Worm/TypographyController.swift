@@ -42,4 +42,16 @@ class TypographyController {
 		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
 		setStyle(style: textStyle, label: label, letterSpacing: letterSpacing)
 	}
+	
+	func setHeaderTextStyle(label: UILabel) {
+		makeStyle(label: label, alignment: .left, lineHeight: 1.3, letterSpacing: -0.28)
+	}
+	
+	func setPostStyle(label: UILabel) {
+		makeStyle(label: label, alignment: .left, lineHeight: 1.386, letterSpacing: 0.026)
+	}
+	
+	func setTimestampStyle(label: UILabel) {
+		makeStyle(label: label, alignment: .left, lineHeight: 0.84, letterSpacing: 0.012)
+	}
 }

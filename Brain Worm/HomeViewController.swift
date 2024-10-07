@@ -23,31 +23,21 @@ class HomeViewController: UIViewController {
 	
 	let setFont: TypographyController = .init()
 	
-	func setHeaderTextStyle(label: UILabel) {
-		setFont.makeStyle(label: label, alignment: .left, lineHeight: 1.3, letterSpacing: -0.28)
-	}
 	
-	func setPostStyle(label: UILabel) {
-		setFont.makeStyle(label: label, alignment: .left, lineHeight: 1.386, letterSpacing: 0.026)
-	}
-	
-	func setTimestampStyle(label: UILabel) {
-		setFont.makeStyle(label: label, alignment: .left, lineHeight: 0.84, letterSpacing: 0.012)
-	}
 	
 	func setTextStyle() {
-		setHeaderTextStyle(label: astarionNameLabel)
-		setHeaderTextStyle(label: astarionUsernameLabel)
-		setPostStyle(label: astarionPostLabel)
-		setTimestampStyle(label: astarionTimestampLabel)
-		setHeaderTextStyle(label: shadowheartNameLabel)
-		setHeaderTextStyle(label: shadowheartUsernameLabel)
-		setPostStyle(label: shadowheartPostLabel)
-		setTimestampStyle(label: shadowheartTimestampLabel)
-		setHeaderTextStyle(label: gwenNameLabel)
-		setHeaderTextStyle(label: gwenUsernameLabel)
-		setPostStyle(label: gwenPostLabel)
-		setTimestampStyle(label: gwenTimestampLabel)
+		setFont.setHeaderTextStyle(label: astarionNameLabel)
+		setFont.setHeaderTextStyle(label: astarionUsernameLabel)
+		setFont.setPostStyle(label: astarionPostLabel)
+		setFont.setTimestampStyle(label: astarionTimestampLabel)
+		setFont.setHeaderTextStyle(label: shadowheartNameLabel)
+		setFont.setHeaderTextStyle(label: shadowheartUsernameLabel)
+		setFont.setPostStyle(label: shadowheartPostLabel)
+		setFont.setTimestampStyle(label: shadowheartTimestampLabel)
+		setFont.setHeaderTextStyle(label: gwenNameLabel)
+		setFont.setHeaderTextStyle(label: gwenUsernameLabel)
+		setFont.setPostStyle(label: gwenPostLabel)
+		setFont.setTimestampStyle(label: gwenTimestampLabel)
 	}
 	
 	override func viewDidLoad() {
