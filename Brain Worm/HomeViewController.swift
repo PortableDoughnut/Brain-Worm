@@ -52,6 +52,24 @@ class HomeViewController: UIViewController {
 		super.viewDidLoad()
 		
 		setTextStyle()
+		
+		NotificationCenter.default.addObserver(self, selector: #selector(updateDarkMode), name: Notification.Name("darkModeChanged"), object: nil)
+	}
+	
+	@objc func updateDarkMode() {
+		let isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
+		overrideUserInterfaceStyle = isDarkMode ? .dark : .light
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+
+		let isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
+		overrideUserInterfaceStyle = isDarkMode ? .dark : .light
+	}
+	
+	deinit {
+		NotificationCenter.default.removeObserver(self, name: Notification.Name("darkModeChanged"), object: nil)
 	}
 
 

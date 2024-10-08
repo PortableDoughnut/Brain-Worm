@@ -8,14 +8,33 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+	@IBOutlet var settingsView: UIView!
+	@IBOutlet weak var darkmodeSwitch: UISwitch!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		
+		let isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
+			darkmodeSwitch.isOn = isDarkMode
+			overrideUserInterfaceStyle = isDarkMode ? .dark : .light
+		
+		if self.traitCollection.userInterfaceStyle != .dark {
+			darkmodeSwitch.isOn = false
+		}
     }
     
 
+	@IBAction func onDarkModePressed(_ sender: UISwitch) {
+		if sender.isOn {
+			overrideUserInterfaceStyle = .dark
+			UserDefaults.standard.set(true, forKey: "isDarkMode")
+		} else {
+			overrideUserInterfaceStyle = .light
+			UserDefaults.standard.set(false, forKey: "isDarkMode")
+		}
+		
+		NotificationCenter.default.post(name: Notification.Name("darkModeChanged"), object: nil)
+	}
 	
     /*
     // MARK: - Navigation

@@ -96,8 +96,8 @@
                                     <constraint firstItem="Gey-eC-Jku" firstAttribute="top" secondItem="1z1-p0-O3U" secondAttribute="top" id="jHk-lb-VbH"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuO-6P-mO4">
-                                <rect key="frame" x="0.0" y="787.33333333333337" width="300" height="34.333333333333371"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuO-6P-mO4">
+                                <rect key="frame" x="158.33333333333334" y="787.33333333333337" width="113.33333333333334" height="34.333333333333371"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system" title="Settings"/>
@@ -117,6 +117,7 @@
                             <constraint firstAttribute="bottomMargin" secondItem="zVG-zg-niU" secondAttribute="bottom" constant="400" id="Pcx-Im-ZvK"/>
                             <constraint firstItem="SJT-UG-mKm" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" id="XGv-e6-hy6"/>
                             <constraint firstItem="d4X-KN-Ozq" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="ZHJ-xy-HUx"/>
+                            <constraint firstItem="LuO-6P-mO4" firstAttribute="centerX" secondItem="nrT-j8-31K" secondAttribute="centerX" id="acb-yj-tgZ"/>
                             <constraint firstItem="ECE-j7-edt" firstAttribute="top" secondItem="d4X-KN-Ozq" secondAttribute="bottom" constant="12" id="b8Z-Nb-ZJN"/>
                             <constraint firstItem="SJT-UG-mKm" firstAttribute="top" secondItem="pLb-Wu-4db" secondAttribute="top" constant="20" id="jF6-KD-ubi"/>
                             <constraint firstItem="ECE-j7-edt" firstAttribute="leading" secondItem="pLb-Wu-4db" secondAttribute="leading" constant="20" id="nIo-Fo-TFL"/>
@@ -164,6 +165,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Dark Mode" translatesAutoresizingMaskIntoConstraints="NO" id="PYU-CZ-zVl">
                                         <rect key="frame" x="95.666666666666671" y="0.0" width="51.000000000000014" height="31"/>
                                         <color key="onTintColor" name="AccentColor"/>
+                                        <connections>
+                                            <action selector="onDarkModePressed:" destination="C0p-eA-dGf" eventType="valueChanged" id="7YY-uF-DGp"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -176,6 +180,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VrS-tZ-b6v"/>
+                    <connections>
+                        <outlet property="darkmodeSwitch" destination="PYU-CZ-zVl" id="PAX-go-JG3"/>
+                        <outlet property="settingsView" destination="Rb7-DD-AYG" id="Ljk-Lp-nbl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKY-eU-QOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
