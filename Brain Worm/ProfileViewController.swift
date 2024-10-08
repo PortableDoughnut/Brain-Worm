@@ -40,8 +40,9 @@ class ProfileViewController: UIViewController {
 		profilePictureImage.layer.borderWidth = 8.12
     }
     
-	@IBAction func onSettingsPressed(_ sender: UIButton) {
-		print("Settings button pressed")
+
+	@IBAction func onSettingsButtonPressed() {
+		performSegue(withIdentifier: "settingsSegue", sender: nil)
 	}
 	
     /*
