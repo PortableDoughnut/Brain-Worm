@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fRb-ps-3BV">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,23 +14,23 @@
             <objects>
                 <viewController id="Wop-85-jVu" customClass="ProfileViewController" customModule="Brain_Worm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrT-j8-31K">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicago Skyline" translatesAutoresizingMaskIntoConstraints="NO" id="SJT-UG-mKm" userLabel="Profile Background">
-                                <rect key="frame" x="0.0" y="123.00000000000001" width="430" height="229.33333333333337"/>
+                                <rect key="frame" x="0.0" y="125.99999999999999" width="440" height="234.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SJT-UG-mKm" secondAttribute="height" multiplier="15:8" id="8RE-yf-ebD"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gwen Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="zVG-zg-niU" userLabel="Profile Picture" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                <rect key="frame" x="82" y="183" width="266" height="266"/>
+                                <rect key="frame" x="76.666666666666686" y="186" width="287" height="287"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zVG-zg-niU" secondAttribute="height" multiplier="1:1" id="8zT-1I-Y6m"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-KN-Ozq">
-                                <rect key="frame" x="141.66666666666666" y="461" width="146.99999999999997" height="131.33333333333326"/>
+                                <rect key="frame" x="146.66666666666666" y="461" width="146.99999999999997" height="131.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gwen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQi-Jo-I69" userLabel="Name">
                                         <rect key="frame" x="22.666666666666693" y="0.0" width="101.66666666666669" height="47.333333333333336"/>
@@ -56,14 +56,14 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-j7-edt" userLabel="Bio">
-                                <rect key="frame" x="20" y="584.66666666666674" width="390" height="32.666666666666629"/>
+                                <rect key="frame" x="20" y="584.66666666666674" width="400" height="32.666666666666629"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis pharetra faucibus. In hac habitasse platea dictumst. Pellentesque fermentum tristique interdum. Quisque accumsan lacus vitae posuere lacinia. Nam leo urna, faucibus nec rhoncus ac, molestie ut mi. Phasellus eu congue nisl. Nulla et fermentum nulla. Curabitur at augue libero. Aliquam semper lacus quis mauris ultricies, quis maximus ligula convallis. Cras porta lacus eu metus tincidunt lobortis. Proin eleifend nisl ut tellus consequat molestie. Phasellus convallis sapien quis libero ultricies, quis auctor tellus bibendum.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-p0-O3U" userLabel="Screen Bottom">
-                                <rect key="frame" x="20" y="683.33333333333337" width="300" height="80"/>
+                                <rect key="frame" x="20" y="707.33333333333337" width="300" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-eC-Jku" userLabel="Post" customClass="Post" customModule="Brain_Worm" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
@@ -97,7 +97,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuO-6P-mO4">
-                                <rect key="frame" x="158.33333333333334" y="787.33333333333337" width="113.33333333333334" height="34.333333333333371"/>
+                                <rect key="frame" x="163.33333333333334" y="811.33333333333337" width="113.33333333333334" height="34.333333333333371"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system" title="Settings"/>
@@ -150,11 +150,11 @@
             <objects>
                 <viewController id="C0p-eA-dGf" customClass="SettingsViewController" customModule="Brain_Worm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rb7-DD-AYG">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="csB-Od-tgi" userLabel="Dark Mode Stack View">
-                                <rect key="frame" x="12" y="115" width="144.66666666666666" height="31"/>
+                                <rect key="frame" x="12" y="118" width="144.66666666666666" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ne-e0-391">
                                         <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="31"/>
@@ -194,17 +194,17 @@
             <objects>
                 <viewController id="TcG-9R-wU1" customClass="HomeViewController" customModule="Brain_Worm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hbu-78-sd0">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiz-X8-W0B" userLabel="Home Stack">
-                                <rect key="frame" x="0.0" y="59" width="523.33333333333337" height="790"/>
+                                <rect key="frame" x="0.0" y="62" width="543.33333333333337" height="811"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-Pe-0a8" userLabel="Posts">
-                                        <rect key="frame" x="11.999999999999972" y="0.0" width="499.33333333333326" height="790"/>
+                                        <rect key="frame" x="12" y="0.0" width="519.33333333333337" height="811"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGJ-fE-UJZ" userLabel="Astarion Post">
-                                                <rect key="frame" x="0.0" y="0.0" width="499.33333333333331" height="151.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="519.33333333333337" height="158"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GFM-67-thd" userLabel="User Info">
                                                         <rect key="frame" x="0.0" y="0.0" width="257" height="40"/>
@@ -231,7 +231,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish I could look in the mirror and admire my own beauty" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-8S-qbq">
-                                                        <rect key="frame" x="0.0" y="71" width="351.33333333333331" height="30"/>
+                                                        <rect key="frame" x="0.0" y="74" width="351.33333333333331" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Vcn-qW-hsg"/>
                                                         </constraints>
@@ -240,7 +240,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="5 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-m3-76Q">
-                                                        <rect key="frame" x="0.0" y="131.66666666666666" width="30" height="20"/>
+                                                        <rect key="frame" x="0.0" y="138" width="30" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="oTE-LI-UCn"/>
                                                         </constraints>
@@ -254,14 +254,14 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cme-St-1Yt" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="175.66666666666666" width="499.33333333333331" height="1"/>
+                                                <rect key="frame" x="0.0" y="182" width="519.33333333333337" height="0.66666666666665719"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="2XW-7T-I0X"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-0H-kG4" userLabel="Shadowheart Post">
-                                                <rect key="frame" x="0.0" y="200.66666666666669" width="499.33333333333331" height="187.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="206.66666666666669" width="519.33333333333337" height="194.66666666666669"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-1G-juN" userLabel="User Info">
                                                         <rect key="frame" x="0.0" y="0.0" width="230.66666666666666" height="40"/>
@@ -288,13 +288,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maybe I should cut my bangs..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-kf-xdX">
-                                                        <rect key="frame" x="0.0" y="98" width="188" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="101.66666666666663" width="188" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f1-BV-q4I">
-                                                        <rect key="frame" x="0.0" y="171.66666666666663" width="28" height="15.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="179" width="28" height="15.666666666666657"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" name="Timestamp"/>
                                                         <nil key="highlightedColor"/>
@@ -305,14 +305,14 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYJ-fP-TOk" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="412" width="499.33333333333331" height="0.66666666666668561"/>
+                                                <rect key="frame" x="0.0" y="425.33333333333331" width="519.33333333333337" height="0.66666666666668561"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="FNj-K7-587"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rce-TD-erX" userLabel="Gwen Post">
-                                                <rect key="frame" x="0.0" y="436.66666666666669" width="499.33333333333331" height="187.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="450" width="519.33333333333337" height="195"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QJA-jR-25x" userLabel="User Info">
                                                         <rect key="frame" x="0.0" y="0.0" width="268.66666666666669" height="40"/>
@@ -339,13 +339,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the gayest woman alive." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-vA-Ptn">
-                                                        <rect key="frame" x="0.0" y="97.999999999999943" width="174" height="15.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="102" width="174" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-BJ-T6N">
-                                                        <rect key="frame" x="0.0" y="171.66666666666669" width="34.666666666666664" height="15.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="179.33333333333337" width="34.666666666666664" height="15.666666666666657"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" name="Timestamp"/>
                                                         <nil key="highlightedColor"/>
@@ -356,14 +356,14 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-BM-hX2" userLabel="Post Seperator">
-                                                <rect key="frame" x="0.0" y="648" width="499.33333333333331" height="0.66666666666662877"/>
+                                                <rect key="frame" x="0.0" y="669" width="519.33333333333337" height="0.66666666666662877"/>
                                                 <color key="backgroundColor" name="Secondary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.78000000000000003" id="VNb-yq-lFZ"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-fi-I7c" userLabel="Karlach Post">
-                                                <rect key="frame" x="0.0" y="672.66666666666663" width="499.33333333333331" height="117.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="693.66666666666663" width="519.33333333333337" height="117.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YkP-Br-4BK" userLabel="User Info">
                                                         <rect key="frame" x="0.0" y="0.0" width="236.33333333333334" height="40"/>
@@ -478,7 +478,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="7C2-PZ-IHI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0nH-3X-4Xd">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="62" width="440" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
