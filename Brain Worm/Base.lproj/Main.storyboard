@@ -96,9 +96,6 @@
                                         <color key="tintColor" name="AccentColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system" title="Settings"/>
-                                        <connections>
-                                            <action selector="onSettingsPressed:" destination="Wop-85-jVu" eventType="touchUpInside" id="3EI-VC-Pbr"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
