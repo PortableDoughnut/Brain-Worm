@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
 	@IBOutlet weak var profilePictureImage: ProfilePicture!
 	@IBOutlet weak var profileBackgroundImage: UIImageView!
 	
-	let currentUser: User = users[2]
+	let currentUser: User = users["Gwen"]!
 
 	enum Alignment {
 		case left
@@ -44,6 +44,8 @@ class ProfileViewController: UIViewController {
 		tableView.dataSource = self
 		tableView.register(UINib(nibName: "ProfileInfoTableViewCell", bundle: nil),
 						   forCellReuseIdentifier: "InfoCell")
+		tableView.register(UINib(nibName: "PostTableViewCell", bundle: nil),
+						   forCellReuseIdentifier: "PostCell")
 		tableView.rowHeight = UITableView.automaticDimension
 		tableView.estimatedRowHeight = 100
 		
@@ -126,7 +128,16 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "BioCell", for: indexPath)
 			cell.textLabel?.text = currentUser.bio
 			return cell
-		case 2: return UITableViewCell()
+		case 2:
+			guard let cell = tableView.dequeueReusableCell(
+				withIdentifier: "PostCell",
+				for: indexPath) as? PostTableViewCell else {
+					return UITableViewCell()
+				}
+			cell
+				.update(posts[posts.lastIndex(where: {	$0.user.username == currentUser.username }) ?? 0])
+			
+			return cell
 		case 3:
 			let cell = tableView.dequeueReusableCell(
 				withIdentifier: "SettingsCell",

@@ -24,6 +24,6 @@ class ProfileInfoTableViewCell: UITableViewCell {
     
 	func update(user: User) {
 		nameLabel.text = user.name
-		usernameLabel.text = "@\(user.username)"
+		usernameLabel.text = user.username
 	}
 }
