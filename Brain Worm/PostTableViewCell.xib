@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Brain_Worm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-Ug-GyQ">
+                        <rect key="frame" x="8" y="4" width="304" height="105"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-PO-gBC" userLabel="User Info">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="33.666666666666664"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNV-AR-4cd" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="33.666666666666664" height="33.666666666666664"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zNV-AR-4cd" secondAttribute="height" multiplier="1:1" id="Fuu-ia-o5H"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="105" id="pBA-o8-Y1P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-16-zJV">
+                                        <rect key="frame" x="37.666666666666664" y="7.3333333333333339" width="84.333333333333343" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-N5-T2M">
+                                        <rect key="frame" x="126" y="10.333333333333332" width="178" height="13.333333333333332"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                        <color key="textColor" name="Secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-Ek-K8t">
+                                <rect key="frame" x="0.0" y="35.666666666666671" width="304" height="33.666666666666671"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-R4-B3y">
+                                <rect key="frame" x="0.0" y="71.333333333333329" width="304" height="33.666666666666671"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" name="Timestamp"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VG7-HG-RNF"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q1h-Ug-GyQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Qb1-Dw-Xsk"/>
+                    <constraint firstAttribute="bottom" secondItem="q1h-Ug-GyQ" secondAttribute="bottom" constant="4" id="TtF-KS-sq8"/>
+                    <constraint firstAttribute="trailing" secondItem="q1h-Ug-GyQ" secondAttribute="trailing" constant="8" id="aI4-EC-U1k"/>
+                    <constraint firstItem="q1h-Ug-GyQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="kTR-wI-mYO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="G4U-16-zJV" id="gsD-W9-wai"/>
+                <outlet property="postLabel" destination="xXG-Ek-K8t" id="P2x-9D-gi2"/>
+                <outlet property="profilePictureImage" destination="zNV-AR-4cd" id="Umr-RW-2Ds"/>
+                <outlet property="timestampLabel" destination="kcA-R4-B3y" id="ZT0-GW-7WR"/>
+                <outlet property="usernameLabel" destination="vqe-N5-T2M" id="rmh-vV-fe4"/>
+            </connections>
+            <point key="canvasLocation" x="-44.274809160305338" y="13.028169014084508"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Secondary">
+            <color red="0.4309999942779541" green="0.81999999284744263" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Timestamp">
+            <color red="0.13699999451637268" green="0.10999999940395355" blue="0.0040000001899898052" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
