@@ -11,28 +11,15 @@ class ProfileViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var profilePictureImage: ProfilePicture!
 	@IBOutlet weak var profileBackgroundImage: UIImageView!
-	
-	let currentUser: User = users["Gwen"]!
 
 	enum Alignment {
 		case left
 		case center
 	}
 	
-	
-//	func styalizeText() {
-////		let setFont: TypographyController = .init()
-//		
-////		setFont.makeStyle(label: bioLabel, alignment: .center, lineHeight: 1.3, letterSpacing: 0.8)
-////		setFont.makeStyle(label: nameLabel, alignment: .center, lineHeight: 1.1, letterSpacing: -1.2)
-////		setFont.setPostStyle(label: postLabel)
-////		setFont.setTimestampStyle(label: timestampLabel)
-//	}
-	
 	override func viewDidLoad() {
         super.viewDidLoad()
-
-//		styalizeText()
+		
 		profilePictureImage.layer.borderColor = #colorLiteral(red: 0.4309999943, green: 0.8199999928, blue: 0.9879999757, alpha: 1)
 		profilePictureImage.layer.borderWidth = 4.06
 		
@@ -51,8 +38,6 @@ class ProfileViewController: UIViewController {
 		
 		profilePictureImage.image = currentUser.profilePicture
 		profileBackgroundImage.image = currentUser.profileBackground
-		
-
     }
 	
 	@objc func updateDarkMode() {

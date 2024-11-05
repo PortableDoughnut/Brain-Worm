@@ -111,3 +111,5 @@ var users: [String : User] = [
 		profileBackground: #imageLiteral(resourceName: "Nature.jpg"),
 		bio: "🔥 Infernal warrior with a heart ablaze | Fist of fury, heart of gold | Battling devils and inner demons | On a mission to break free and find peace 🖤")
 ]
+
+let currentUser: User = users["Gwen"]!

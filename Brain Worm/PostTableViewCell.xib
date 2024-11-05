@@ -17,27 +17,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-Ug-GyQ">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-Ug-GyQ">
                         <rect key="frame" x="8" y="4" width="304" height="105"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-PO-gBC" userLabel="User Info">
-                                <rect key="frame" x="0.0" y="0.0" width="304" height="57"/>
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="63"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNV-AR-4cd" customClass="ProfilePicture" customModule="Brain_Worm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3.6666666666666679" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="6.6666666666666643" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zNV-AR-4cd" secondAttribute="height" multiplier="1:1" id="Fuu-ia-o5H"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="pBA-o8-Y1P"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4U-16-zJV">
-                                        <rect key="frame" x="54" y="19" width="42.666666666666657" height="19.333333333333329"/>
+                                        <rect key="frame" x="54" y="22" width="42.666666666666657" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                         <color key="textColor" name="Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-N5-T2M">
-                                        <rect key="frame" x="100.66666666666666" y="19" width="203.33333333333334" height="19.333333333333329"/>
+                                        <rect key="frame" x="100.66666666666667" y="22" width="203.33333333333331" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                         <color key="textColor" name="Secondary"/>
                                         <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-hf-z2O">
-                                <rect key="frame" x="0.0" y="61" width="304" height="44"/>
+                                <rect key="frame" x="0.0" y="67" width="304" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-Ek-K8t">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="20.333333333333332"/>
@@ -58,16 +58,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Timestamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-R4-B3y">
-                                        <rect key="frame" x="0.0" y="22.333333333333329" width="304" height="21.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="22.333333333333329" width="304" height="15.666666666666664"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <color key="textColor" name="Timestamp"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="xXG-Ek-K8t" secondAttribute="trailing" id="kzV-lW-cpq"/>
-                                    <constraint firstItem="xXG-Ek-K8t" firstAttribute="leading" secondItem="4mC-hf-z2O" secondAttribute="leading" id="l2B-ya-ojw"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VG7-HG-RNF"/>

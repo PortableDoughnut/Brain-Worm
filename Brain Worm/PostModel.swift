@@ -12,6 +12,8 @@ struct Post {
 	var user: User
 	var content: String
 	var createdAt: Date
+	var likes: Int
+	
 	var name: String {
 		user.name
 	}
@@ -26,6 +28,7 @@ struct Post {
 		self.user = user
 		self.content = content
 		createdAt = Date()
+		likes = 0
 	}
 }
 

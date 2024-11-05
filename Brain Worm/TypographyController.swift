@@ -48,7 +48,7 @@ class TypographyController {
 	}
 	
 	func setPostStyle(label: UILabel) {
-		makeStyle(label: label, alignment: .left, lineHeight: 1.386, letterSpacing: 0.026)
+		makeStyle(label: label, alignment: .left, lineHeight: 1.002, letterSpacing: 0.026)
 	}
 	
 	func setTimestampStyle(label: UILabel) {

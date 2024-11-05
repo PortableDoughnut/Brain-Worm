@@ -8,52 +8,21 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-	@IBOutlet weak var karlachTimestampLabel: UILabel!
-	@IBOutlet weak var karlachPostLabel: UILabel!
-	@IBOutlet weak var karlachUsernameLabel: UILabel!
-	@IBOutlet weak var karlachNameLabel: UILabel!
-	@IBOutlet weak var gwenTimestampLabel: UILabel!
-	@IBOutlet weak var gwenPostLabel: UILabel!
-	@IBOutlet weak var gwenUsernameLabel: UILabel!
-	@IBOutlet weak var gwenNameLabel: UILabel!
-	@IBOutlet weak var shadowheartTimestampLabel: UILabel!
-	@IBOutlet weak var shadowheartPostLabel: UILabel!
-	@IBOutlet weak var shadowheartUsernameLabel: UILabel!
-	@IBOutlet weak var shadowheartNameLabel: UILabel!
-	@IBOutlet weak var astarionTimestampLabel: UILabel!
-	@IBOutlet weak var astarionPostLabel: UILabel!
-	@IBOutlet weak var astarionUsernameLabel: UILabel!
-	@IBOutlet weak var astarionNameLabel: UILabel!
-	
-	let setFont: TypographyController = .init()
-	
-	
-	
-	func setTextStyle() {
-		setFont.setHeaderTextStyle(label: astarionNameLabel)
-		setFont.setHeaderTextStyle(label: astarionUsernameLabel)
-		setFont.setPostStyle(label: astarionPostLabel)
-		setFont.setTimestampStyle(label: astarionTimestampLabel)
-		setFont.setHeaderTextStyle(label: shadowheartNameLabel)
-		setFont.setHeaderTextStyle(label: shadowheartUsernameLabel)
-		setFont.setPostStyle(label: shadowheartPostLabel)
-		setFont.setTimestampStyle(label: shadowheartTimestampLabel)
-		setFont.setHeaderTextStyle(label: gwenNameLabel)
-		setFont.setHeaderTextStyle(label: gwenUsernameLabel)
-		setFont.setPostStyle(label: gwenPostLabel)
-		setFont.setTimestampStyle(label: gwenTimestampLabel)
-		setFont.setHeaderTextStyle(label: karlachNameLabel)
-		setFont.setHeaderTextStyle(label: karlachUsernameLabel)
-		setFont.setPostStyle(label: karlachPostLabel)
-		setFont.setTimestampStyle(label: karlachTimestampLabel)
-	}
+	@IBOutlet weak var tableView: UITableView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		setTextStyle()
-		
 		NotificationCenter.default.addObserver(self, selector: #selector(updateDarkMode), name: Notification.Name("darkModeChanged"), object: nil)
+		
+		tableView.delegate = self
+		tableView.dataSource = self
+		tableView.register(UINib(nibName: "PostTableViewCell", bundle: nil),
+						   forCellReuseIdentifier: "PostCell")
+		tableView.register(UINib(nibName: "EngagementTableViewCell", bundle: nil),
+						   forCellReuseIdentifier: "EngagementCell")
+		tableView.rowHeight = UITableView.automaticDimension
+		tableView.estimatedRowHeight = 100
 	}
 	
 	@objc func updateDarkMode() {
@@ -63,7 +32,7 @@ class HomeViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-
+		
 		let isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
 		overrideUserInterfaceStyle = isDarkMode ? .dark : .light
 	}
@@ -71,7 +40,40 @@ class HomeViewController: UIViewController {
 	deinit {
 		NotificationCenter.default.removeObserver(self, name: Notification.Name("darkModeChanged"), object: nil)
 	}
+	
+	
+}
 
-
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+	func numberOfSections(in tableView: UITableView) -> Int {
+		posts.count
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		///TODO: Replace with `replies.count + 2`
+		2
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		if indexPath.row == 0 {
+			guard let cell = tableView.dequeueReusableCell(
+				withIdentifier: "PostCell",
+				for: indexPath
+			) as? PostTableViewCell else {	return UITableViewCell()	}
+			cell.update(posts[indexPath.section])
+			return cell
+		}	else if indexPath.row == 1 {
+			guard let cell = tableView.dequeueReusableCell(
+				withIdentifier: "EngagementCell",
+				for: indexPath) as? EngagementTableViewCell else {
+				return UITableViewCell()
+			}
+			cell.update(posts[indexPath.section])
+			return cell
+		}	else {
+			return UITableViewCell()
+		}
+	}
+	
 }
 

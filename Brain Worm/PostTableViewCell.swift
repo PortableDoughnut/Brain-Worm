@@ -38,5 +38,12 @@ class PostTableViewCell: UITableViewCell {
 		usernameLabel.text = post.username
 		timestampLabel.text = dateFormatter.string(from: post.createdAt)
 		postLabel.text = post.content
+		
+		let setFont: TypographyController = .init()
+		
+		setFont.setHeaderTextStyle(label: nameLabel)
+		setFont.setHeaderTextStyle(label: usernameLabel)
+		setFont.setPostStyle(label: postLabel)
+		setFont.setTimestampStyle(label: timestampLabel)
 	}
 }
